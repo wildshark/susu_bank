@@ -1,7 +1,3 @@
-Here is the corrected and formatted version for your `README.md` file.
-
------
-
 # SUSU: Digital Susu Management System
 
 SUSU is a comprehensive digital solution designed to manage and streamline traditional 'Susu' (Rotating Savings and Credit Association - ROSCA) groups. This platform provides a secure, reliable, and user-friendly interface for collectors and members to track contributions, manage payouts, and maintain transparent financial records.
