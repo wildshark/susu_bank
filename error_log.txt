@@ -1,0 +1,51 @@
+[2025-10-22 18:08:21] Fatal Error: Error: No PHP files found in directory 'template'. in G:\xampp\htdocs\rabbitphplite\control\global.php on line 7
+[2025-10-22 18:08:26] Fatal Error: Error: No PHP files found in directory 'template'. in G:\xampp\htdocs\rabbitphplite\control\global.php on line 7
+[2025-10-22 18:11:52] Fatal Error: Error: No PHP files found in directory 'template'. in G:\xampp\htdocs\rabbitphplite\control\global.php on line 7
+[2025-10-22 18:11:53] Fatal Error: Error: No PHP files found in directory 'template'. in G:\xampp\htdocs\rabbitphplite\control\global.php on line 7
+[2025-10-22 18:12:39] Fatal Error: Error: MySQL database connection failed: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in G:\xampp\htdocs\rabbitphplite\control\connection.php on line 35
+[2025-10-22 18:13:43] Fatal Error: Error: Invalid database type specified: ''. in G:\xampp\htdocs\rabbitphplite\control\global.php on line 13
+[2025-10-22 18:14:52] Fatal Error: Error: Invalid database type specified: ''. in G:\xampp\htdocs\rabbitphplite\control\global.php on line 13
+[2025-10-22 18:17:06] Fatal Error: Unsupported or unspecified database type: null in G:\xampp\htdocs\rabbitphplite\index.php on line 33
+[2025-10-22 18:17:58] Fatal Error: Unsupported or unspecified database type: null in G:\xampp\htdocs\rabbitphplite\index.php on line 33
+[2025-10-22 18:18:02] Fatal Error: Unsupported or unspecified database type: null in G:\xampp\htdocs\rabbitphplite\index.php on line 33
+[2025-11-01 11:46:38] Fatal Error: Error: Invalid database type specified: ''. in G:\xampp\htdocs\susu_bank\modules\Business.php on line 23
+[2025-11-01 13:50:36] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\index.php on line 43
+[2025-11-01 13:57:05] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\main.php on line 8
+[2025-11-01 15:21:35] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\main.php on line 14
+[2025-11-01 16:39:20] Fatal Error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in G:\xampp\htdocs\susu_bank\index.php on line 60
+[2025-11-01 16:55:17] Fatal Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? ORDER BY lastName, firstName ASC' at line 1 in G:\xampp\htdocs\susu_bank\index.php on line 54
+[2025-11-01 16:55:20] Fatal Error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? ORDER BY lastName, firstName ASC' at line 1 in G:\xampp\htdocs\susu_bank\index.php on line 54
+[2025-11-01 17:00:00] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:00:14] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:00:47] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:00:50] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:00:51] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:01:47] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:01:49] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 17:01:51] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\members.php on line 184
+[2025-11-01 21:37:54] Fatal Error: Failed to instantiate Ledger: Too few arguments to function Ledger::__construct(), 0 passed in G:\xampp\htdocs\susu_bank\control\function.php on line 117 and exactly 1 expected in G:\xampp\htdocs\susu_bank\index.php on line 45
+[2025-11-01 22:29:19] Fatal Error: Failed to instantiate Ledger: Too few arguments to function Ledger::__construct(), 0 passed in G:\xampp\htdocs\susu_bank\control\function.php on line 117 and exactly 1 expected in G:\xampp\htdocs\susu_bank\index.php on line 45
+[2025-11-01 23:29:18] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 192
+[2025-11-01 23:29:29] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 192
+[2025-11-01 23:30:56] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 187
+[2025-11-01 23:31:43] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 187
+[2025-11-01 23:33:37] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 187
+[2025-11-01 23:33:44] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 187
+[2025-11-02 00:18:48] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution-details.php on line 253
+[2025-11-02 10:06:18] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 149
+[2025-11-02 10:57:15] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\modules\Transactions.php on line 141
+[2025-11-02 11:05:27] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 206
+[2025-11-02 11:22:51] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 207
+[2025-11-02 11:24:55] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 207
+[2025-11-02 11:33:24] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\dashboard.php on line 233
+[2025-11-02 11:33:43] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\dashboard.php on line 233
+[2025-11-02 11:35:21] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\dashboard.php on line 233
+[2025-11-02 11:35:22] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\dashboard.php on line 233
+[2025-11-02 11:38:17] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\dashboard.php on line 233
+[2025-11-02 11:41:15] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 193
+[2025-11-02 12:01:33] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 193
+[2025-11-02 13:49:47] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\main.php on line 85
+[2025-11-02 14:39:26] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\main.php on line 92
+[2025-11-02 14:57:03] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\modules\Transactions.php on line 366
+[2025-11-04 05:52:17] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 247
+[2025-11-04 05:52:28] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 247
