@@ -222,7 +222,78 @@
                     }
                 }
                 break;
-            
+
+                case'add-staff':
+                    $data['agentId'] = $_SESSION['agentID'];
+                    $data['staffNum'] = time();
+                    $data['firstName'] = $_POST['first_name'];
+                    $data['middleName'] = $_POST['middle_name'];
+                    $data['lastName'] =$_POST['last_name'];
+                    $data['gender'] = $_POST['gender'];
+                    $data['dob'] = $_POST['dob'];
+                    $data['maritalStatus'] = $_POST['marital_status'];
+                    $data['nationality'] = $_POST['nationality'];
+                    $data['mobile'] = $_POST['mobile'];
+                    $data['email'] = $_POST['email'];
+                    $data['postalAddress'] = $_POST['postal_address'];
+                    $data['digitalAddress'] = $_POST['digital_address'];
+                    $data['contactAddress'] = $_POST['home_address'];
+                    $data['username'] = $_POST['username'];
+                    $data['password'] = $_POST['password'] ?? uniqid();
+                    $add = $staff->createStaff($data);
+                    var_dump($add);
+                    exit;   
+                    if($add == false){
+                        $url['_main'] = $_COOKIE['_main'];
+                        $url['err'] = 110;
+                    }else{
+                        $url['_main'] = $_COOKIE['_main'];
+                        $url['err'] = 111;
+                    }
+                break;
+
+                case'update-staffs':
+                    $data['agentId'] = $_SESSION['agentID'];
+                    $data['staffId'] = $_POST['staff_id'];
+                    $data['staffNum'] = $_POST['staff_num'];
+                    $data['firstName'] = $_POST['first_name'];
+                    $data['midName'] = $_POST['middle_name'];
+                    $data['lastName'] =$_POST['last_name'];
+                    $data['gender'] = $_POST['gender'];
+                    $data['dob'] = $_POST['dob'];
+                    $data['maritalStatus'] = $_POST['marital_status'];
+                    $data['nationality'] = $_POST['nationality'];
+                    $data['mobile'] = $_POST['mobile'];
+                    $data['email'] = $_POST['email'];
+                    $data['postalAddress'] = $_POST['postal_address'];
+                    $data['digitalAddress'] = $_POST['digital_address'];
+                    $data['contactAddress'] = $_POST['home_address'];
+                    $data['username'] = $_POST['username'];
+                    $data['password'] = $_POST['password'] ?? uniqid();
+                    $data['status'] = $_POST['status'];
+                    $add = $staff->createStaff($data);
+                    if($add == false){
+                        $url['_main'] = $_COOKIE['_main'];
+                        $url['err'] = 110;
+                    }else{
+                        $url['_main'] = $_COOKIE['_main'];
+                        $url['err'] = 111;
+                    }
+                break;
+
+                case 'delete-staffs':
+                    $data['agentId'] = $_SESSION['agentID'];
+                    $data['staffId'] = $_POST['staff_id'];
+                    $add = $staff->deleteStaff($data);
+                    if($add == false){
+                        $url['_main'] = $_COOKIE['_main'];
+                        $url['err'] = 112;
+                    }else{
+                        $url['_main'] = $_COOKIE['_main'];
+                        $url['err'] = 113;
+                    }
+                break;  
+
             default:
                 require_once($template['404']);
                 break;

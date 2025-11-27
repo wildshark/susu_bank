@@ -114,8 +114,18 @@
                 require_once($template['payout-detail']);
                 break;
             
-            case'report':
-               
+            case'staffs':
+                $staffs = $staff->getStaffByAgentId($agentID);
+                require_once($template['staffs']);
+                break;  
+            
+            case'staff-detail':
+                $staffID = $_REQUEST['id'];
+                $staff = $staff->getStaff($staffID);
+                require_once($template['staff-detail']);
+                break;
+            
+            case'report':               
                 require_once($template['report']);
                 break;
            

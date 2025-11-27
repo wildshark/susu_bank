@@ -43,6 +43,7 @@ try {
     $client = new ClientsAccount();
     $transaction = new Transactions();
     $ledger = new Ledger();
+    $staff = new Staffs();
     
     if($env['USER-MODE'] == false){
         require_once(SysInfo);// start system 

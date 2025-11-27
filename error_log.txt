@@ -49,3 +49,6 @@
 [2025-11-02 14:57:03] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\modules\Transactions.php on line 366
 [2025-11-04 05:52:17] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 247
 [2025-11-04 05:52:28] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\template\contribution.php on line 247
+[2025-11-27 16:04:21] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\main.php on line 118
+[2025-11-27 20:53:38] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 244
+[2025-11-27 21:04:36] Fatal Error: Failed to load core application files. in G:\xampp\htdocs\susu_bank\route\action.php on line 243

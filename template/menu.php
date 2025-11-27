@@ -36,6 +36,12 @@
             Report
         </a>
     </li>
+    <li>
+        <a href="?_main=staffs" class="nav-link <?php echo ($_REQUEST['_main'] == 'staffs') ? 'active' : ''; ?>">
+            <i class="fas fa-user-tie fa-fw me-2"></i>
+            Staffs  
+        </a>
+    </li>
 </ul>
 <hr>
 <div class="dropdown">
