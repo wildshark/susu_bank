@@ -115,15 +115,56 @@
                 break;
             
             case'staffs':
-                $staffs = $staff->getStaffByAgentId($agentID);
+                $staffs = $staff->getStaffByAgentId($agentID);  
                 require_once($template['staffs']);
                 break;  
             
             case'staff-detail':
                 $staffID = $_REQUEST['id'];
                 $staff = $staff->getStaff($staffID);
-                require_once($template['staff-detail']);
+                $firstName = $staff['fName'];
+                $middleName = $staff['mName'];
+                $lastName = $staff['lName']; 
+                $dob = $staff['dob'];
+                $gender = $staff['gender'];
+                $maritalStatus = $staff['maritalStatus'];
+                $nationality = $staff['nationality'];
+                $occupation = $staff['occupation'];
+                $mobile = $staff['mobile'];
+                $email = $staff['email'];
+                $postalAddress = $staff['postalAddress'];
+                $digitalAddress = $staff['digitalAddress'];
+                $contactAddress = $staff['contactAddress'];
+                $username = $staff['username'];
+                $status = $staff['status'];
+                $agentId = $staff['agentId'];
+                require_once($template['staff-form']);
                 break;
+            
+            case'staff-transaction-details':
+                $staffID = $_REQUEST['id'];
+                $staff = $staff->getStaff($staffID);
+                $firstName = $staff['fName'];
+                $middleName = $staff['mName'];
+                $lastName = $staff['lName']; 
+                $dob = $staff['dob'];
+                $gender = $staff['gender'];
+                $maritalStatus = $staff['maritalStatus'];
+                $nationality = $staff['nationality'];
+                $occupation = $staff['occupation'];
+                $mobile = $staff['mobile'];
+                $email = $staff['email'];
+                $postalAddress = $staff['postalAddress'];
+                $digitalAddress = $staff['digitalAddress'];
+                $contactAddress = $staff['contactAddress'];
+                $username = $staff['username'];
+                $status = $staff['status'];
+                $agentId = $staff['agentId'];
+                
+                $transactions = $transaction->getTransactionsByStaffId($staffID);
+
+                require_once($template['staff-transaction-details']);
+                break;  
             
             case'report':               
                 require_once($template['report']);

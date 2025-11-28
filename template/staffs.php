@@ -176,10 +176,10 @@
                                     </thead>
                                     <tbody>
                                         <?php
-                                            if($members && count($members) > 0){
-                                                foreach($members as $r){
+                                            if($staffs && count($staffs) > 0){
+                                                foreach($staffs as $r){
                                                     // Example: adjust field names to match your $r array/object
-                                                    $statusClass = ($r['status'] === 'Active') ? 'bg-success' : 'bg-secondary';
+                                                    $statusClass = ($r['status'] == 'active') ? 'bg-success' : 'bg-danger';
                                                     $name = $r['fName']." ".$r['lName']." ".$r['oName'];
                                                     $date = date('d-m-Y', strtotime($r['dob']));
                                                     $clientID = $r['staffId'];
@@ -191,7 +191,7 @@
                                                         <td>{$date}</td>
                                                         <td><span class=\"badge {$statusClass}\">{$r['status']}</span></td>
                                                         <td>
-                                                            <a href='?_main=staff-detail&id=$clientID' class=\"btn btn-sm btn-info\"><i class=\"fas fa-eye\"></i></a>
+                                                            <a href='?_main=staff-transaction-detail&id=$clientID' class=\"btn btn-sm btn-info\"><i class=\"fas fa-eye\"></i></a>
                                                             <a href='?_main=staff-detail&id=$clientID' class=\"btn btn-sm btn-warning\"><i class=\"fas fa-edit\"></i></a>
                                                             <a href='?_submit=del-staff&id=$clientID' class=\"btn btn-sm btn-danger\"><i class=\"fas fa-trash\"></i></button>
                                                         </td>

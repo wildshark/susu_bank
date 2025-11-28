@@ -61,8 +61,7 @@ class Staffs{
         try {
             $stmt = $this->_db->prepare($sql);
             $stmt->execute([':staffId' => $staffId]);
-            $result = $stmt->fetch(\PDO::FETCH_ASSOC);
-            return $result !== false ? $result : null;
+            return $stmt->fetch(\PDO::FETCH_ASSOC);
         } catch (\PDOException $e) {
             error_log("Error getting staff: " . $e->getMessage());
             return null;
@@ -79,8 +78,7 @@ class Staffs{
         try {
             $stmt = $this->_db->prepare($sql);
             $stmt->execute([':agentId' => $agentId]);
-            $result = $stmt->fetch(\PDO::FETCH_ASSOC);
-            return $result !== false ? $result : null;
+            return $stmt->fetchAll(\PDO::FETCH_ASSOC);
         } catch (\PDOException $e) {
             error_log("Error getting staff by agentId: " . $e->getMessage());
             return null;
