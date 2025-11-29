@@ -1,8 +1,5 @@
 <?php
 
-use PDO;
-use PDOException;
-
 /**
  * Class Ledger
  * * Handles all CRUD operations for the 'ledger' table.

@@ -1,8 +1,5 @@
 <?php
 
-use PDO;
-use PDOException;
-
 /**
  * Class Transactions
  * * Handles all CRUD operations for the 'transactions' table.

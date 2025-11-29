@@ -1,7 +1,7 @@
 <?php
 // --- Error Handling Configuration ---
-ini_set('display_errors', 0);
-ini_set('display_startup_errors', 0);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -63,6 +63,6 @@ try {
         }
     }
 } catch (Throwable $e) { // Catch any error or exception during core file inclusion
-    handle_fatal_error("Failed to load core application files.", $e->getFile(), $e->getLine());
+    handle_fatal_error("Failed to load core application files: ". $e->getMessage(), $e->getFile(), $e->getLine());
 }
 ?>

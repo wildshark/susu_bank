@@ -18,7 +18,7 @@ class Staffs{
      * @return bool True on success, false on failure.
      */
     public function createStaff(array $data): bool {
-        try {
+     
             $sql = "INSERT INTO `staffs` (`agentId`, `staffNum`, `fName`, `lName`, `oName`, `gender`, `dob`, `nationality`, `maritalStatus`, `email`, `mobile`, `postalAddress`, `digitalAdress`, `homeAddress`, `username`, `password`) VALUES (:agentId,:staffNum,:fName,:lName,:oName,:gender,:dob,:nationality,:maritalStatus,:email,:mobile,:postalAddress,:digitalAdress,:homeAddress,:username,:pwd)";
             $stmt = $this->_db->prepare($sql);
             $result = $stmt->execute([
@@ -44,11 +44,6 @@ class Staffs{
             }else{
                 return false;
             }
-        } catch (\PDOException $e) {
-            error_log("Error adding staff: " . $e->getMessage());
-            //return false;
-            return $e->getMessage();
-        }
     }
 
     /**
