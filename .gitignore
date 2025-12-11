@@ -1,8 +1,8 @@
 .env
 test.php
-error_log.txt
-error_log
-test
-.sftp.json
+.error_log.txt
+./test
+./sftp.json
 .vscode
+./log
 

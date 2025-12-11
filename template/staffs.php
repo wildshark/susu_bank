@@ -233,7 +233,7 @@
                                     name="middle_name"></div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 mb-3"><label class="form-label">Gender</label>
+                            <div class="col-md-6 mb-3"><label class="form-label">Gender</label>
                                 <div>
                                     <div class="form-check form-check-inline"><input class="form-check-input"
                                             type="radio" name="gender" id="male" value="male"><label
@@ -243,9 +243,9 @@
                                             class="form-check-label" for="female">Female</label></div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mb-3"><label for="dob" class="form-label">Date of Birth</label><input
+                            <div class="col-md-6 mb-3"><label for="dob" class="form-label">Date of Birth</label><input
                                     type="date" class="form-control" id="dob" name="dob" required></div>
-                            <div class="col-md-4 mb-3"><label for="maritalStatus" class="form-label">Marital
+                            <div class="col-md-6 mb-3"><label for="maritalStatus" class="form-label">Marital
                                     Status</label><select class="form-select" id="maritalStatus" name="marital_status">
                                     <option selected disabled>Choose...</option>
                                     <option>Single</option>
@@ -253,7 +253,7 @@
                                     <option>Divorced</option>
                                     <option>Widowed</option>
                                 </select></div>
-                            <div class="col-md-4 mb-3"><label for="nationality"
+                            <div class="col-md-6 mb-3"><label for="nationality"
                                     class="form-label">Nationality</label><input type="text" class="form-control"
                                     id="nationality" name="nationality" required></div>
                         </div>
@@ -277,9 +277,9 @@
 
                         <h6 class="form-section-title">Login Credentials</h6>
                         <div class="row">
-                            <div class="col-md-4 mb-3"><label for="username" class="form-label">Username</label><input
+                            <div class="col-md-6 mb-3"><label for="username" class="form-label">Username</label><input
                                     type="text" class="form-control" id="username" name="username" required></div>
-                            <div class="col-md-4 mb-3"><label for="password"
+                            <div class="col-md-6 mb-3"><label for="password"
                                     class="form-label">Password</label><input type="text" class="form-control"
                                     id="password" name="password" required></div>
                         </div>
