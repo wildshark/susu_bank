@@ -180,7 +180,7 @@
                                                 foreach($members as $r){
                                                     // Example: adjust field names to match your $r array/object
                                                     $statusClass = ($r['status'] === 'Active') ? 'bg-success' : 'bg-secondary';
-                                                    $name = $r['nameName']." ".$r['lastName']." ".$r['midName'];
+                                                    $name = $r['firstName']." ".$r['lastName']." ".$r['midName'];
                                                     $date = date('d-m-Y', strtotime($r['cdate']));
                                                     $clientID = $r['clientId'];
 

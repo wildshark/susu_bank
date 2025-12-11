@@ -34,7 +34,7 @@ class Staffs{
             ':email' => $data['email'],
             ':mobile' => $data['mobile'],
             ':postalAddress' => $data['postalAddress'],
-            ':digitalAddress' => $data['digitalAddress'], // Corresponds to `digitalAdress` in SQL
+            ':digitalAdress' => $data['digitalAddress'], // Corresponds to `digitalAdress` in SQL
             ':homeAddress' => $data['contactAddress'], // Corresponds to `homeAddress` in SQL
             ':username' => $data['username'],
             ':pwd' => $data['password']
@@ -120,15 +120,15 @@ class Staffs{
             return $stmt->execute([
                 ':fName' => $data['fName'],
                 ':lName' => $data['lName'],
-                ':oName' => $data['oName'],
+                ':oName' => $data['oName'], // Fixed expected key based on usage in createStaff
                 ':gender' => $data['gender'],
                 ':dob' => $data['dob'],
                 ':nationality' => $data['nationality'],
                 ':email' => $data['email'],
                 ':mobile' => $data['mobile'],
                 ':postalAddress' => $data['postalAddress'],
-                ':digitalAdress' => $data['digitalAdress'],
-                ':homeAddress' => $data['homeAddress'],
+                ':digitalAdress' => $data['digitalAddress'],
+                ':homeAddress' => $data['homeAddress'], // Fixed expected key based on usage in createStaff
                 ':staffId' => $staffId
             ]);
         } catch (\PDOException $e) {

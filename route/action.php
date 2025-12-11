@@ -240,9 +240,7 @@
                     $data['contactAddress'] = $_POST['home_address'] ?? 'N/A';
                     $data['username'] = $_POST['username'];
                     $data['password'] = $_POST['password'] ?? uniqid();
-                    $add_staff = $staff->createStaff($data);
-                    var_dump($add_staff);
-                    exit(0);   
+                    $add = $staff->createStaff($data);                    
                     if($add == false){
                         $url['_main'] = $_COOKIE['_main'];
                         $url['err'] = 110;
@@ -271,7 +269,7 @@
                     $data['username'] = $_POST['username'];
                     $data['password'] = $_POST['password'] ?? uniqid();
                     $data['status'] = $_POST['status'];
-                    $add = $staff->createStaff($data);
+                    $add = $staff->updateStaff($data['staffId'], $data);
                     if($add == false){
                         $url['_main'] = $_COOKIE['_main'];
                         $url['err'] = 110;
