@@ -3,3 +3,6 @@ test.php
 error_log.txt
 error_log
 test
+.sftp.json
+.vscode
+
