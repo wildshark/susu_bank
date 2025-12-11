@@ -240,10 +240,9 @@
                     $data['contactAddress'] = $_POST['home_address'] ?? 'N/A';
                     $data['username'] = $_POST['username'];
                     $data['password'] = $_POST['password'] ?? uniqid();
-                    var_dump($data);
-                    $add = $staff->createStaff($data);
-                    var_dump($add);
-                    exit;   
+                    $add_staff = $staff->createStaff($data);
+                    var_dump($add_staff);
+                    exit(0);   
                     if($add == false){
                         $url['_main'] = $_COOKIE['_main'];
                         $url['err'] = 110;

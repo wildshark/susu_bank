@@ -19,31 +19,26 @@ class Staffs{
      */
     public function createStaff(array $data): bool {
      
-            $sql = "INSERT INTO `staffs` (`agentId`, `staffNum`, `fName`, `lName`, `oName`, `gender`, `dob`, `nationality`, `maritalStatus`, `email`, `mobile`, `postalAddress`, `digitalAdress`, `homeAddress`, `username`, `password`) VALUES (:agentId,:staffNum,:fName,:lName,:oName,:gender,:dob,:nationality,:maritalStatus,:email,:mobile,:postalAddress,:digitalAdress,:homeAddress,:username,:pwd)";
-            $stmt = $this->_db->prepare($sql);
-            $result = $stmt->execute([
-                ':agentId' => $data['agentId'],
-                ':staffNum' => $data['staffNum'],
-                ':fName' => $data['firstName'],
-                ':lName' => $data['lastName'],
-                ':oName' => $data['middleName'], // Corresponds to `oName` in SQL
-                ':gender' => $data['gender'],
-                ':dob' => $data['dob'],
-                ':nationality' => $data['nationality'],
-                ':maritalStatus' => $data['maritalStatus'],
-                ':email' => $data['email'],
-                ':mobile' => $data['mobile'],
-                ':postalAddress' => $data['postalAddress'],
-                ':digitalAddress' => $data['digitalAddress'], // Corresponds to `digitalAdress` in SQL
-                ':homeAddress' => $data['contactAddress'], // Corresponds to `homeAddress` in SQL
-                ':username' => $data['username'],
-                ':pwd' => $data['password']
-            ]);
-            if($result){
-                return true;
-            }else{
-                return false;
-            }
+        $sql = "INSERT INTO `staffs` (`agentId`, `staffNum`, `fName`, `lName`, `oName`, `gender`, `dob`, `nationality`, `maritalStatus`, `email`, `mobile`, `postalAddress`, `digitalAdress`, `homeAddress`, `username`, `password`) VALUES (:agentId,:staffNum,:fName,:lName,:oName,:gender,:dob,:nationality,:maritalStatus,:email,:mobile,:postalAddress,:digitalAdress,:homeAddress,:username,:pwd)";
+        $stmt = $this->_db->prepare($sql);
+        return $stmt->execute([
+            ':agentId' => $data['agentId'],
+            ':staffNum' => $data['staffNum'],
+            ':fName' => $data['firstName'],
+            ':lName' => $data['lastName'],
+            ':oName' => $data['middleName'], // Corresponds to `oName` in SQL
+            ':gender' => $data['gender'],
+            ':dob' => $data['dob'],
+            ':nationality' => $data['nationality'],
+            ':maritalStatus' => $data['maritalStatus'],
+            ':email' => $data['email'],
+            ':mobile' => $data['mobile'],
+            ':postalAddress' => $data['postalAddress'],
+            ':digitalAddress' => $data['digitalAddress'], // Corresponds to `digitalAdress` in SQL
+            ':homeAddress' => $data['contactAddress'], // Corresponds to `homeAddress` in SQL
+            ':username' => $data['username'],
+            ':pwd' => $data['password']
+        ]);
     }
 
     /**
