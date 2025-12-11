@@ -113,22 +113,22 @@ class Staffs{
      * @return bool True on success, false on failure.
      */
     public function updateStaff(int $staffId, array $data): bool {
-        $sql = "UPDATE `staffs` SET  `fName` = :fName, `lName` = :lName, `oName` = :oName, `gender` = :gender, `dob` = :dob, `nationality` = :nationality, `email` = :email, `mobile` = :mobile, `postalAddress` = :postalAddress, `digitalAdress` = :digitalAdress, `homeAddress` = :homeAddress WHERE `staffId` = :staffId";
+        $sql = "UPDATE `staffs` SET `fName` = :fName, `lName` = :lName, `oName` = :oName, `gender` = :gender, `dob` = :dob, `maritalStatus` = :maritalStatus, `email` = :email, `mobile` = :mobile, `postalAddress` = :postalAddress, `digitalAdress` = :digitalAdress, `homeAddress` = :homeAddress WHERE `staffId` = :staffId";
 
         try {
             $stmt = $this->_db->prepare($sql);
             return $stmt->execute([
-                ':fName' => $data['fName'],
-                ':lName' => $data['lName'],
-                ':oName' => $data['oName'], // Fixed expected key based on usage in createStaff
+                ':fName' => $data['firstName'],
+                ':lName' => $data['lastName'],
+                ':oName' => $data['midName'],
                 ':gender' => $data['gender'],
                 ':dob' => $data['dob'],
-                ':nationality' => $data['nationality'],
+                ':maritalStatus' => $data['maritalStatus'],
                 ':email' => $data['email'],
                 ':mobile' => $data['mobile'],
                 ':postalAddress' => $data['postalAddress'],
                 ':digitalAdress' => $data['digitalAddress'],
-                ':homeAddress' => $data['homeAddress'], // Fixed expected key based on usage in createStaff
+                ':homeAddress' => $data['contactAddress'],
                 ':staffId' => $staffId
             ]);
         } catch (\PDOException $e) {

@@ -121,21 +121,23 @@
             
             case'staff-detail':
                 $staffID = $_REQUEST['id'];
+                $_SESSION['staffID'] = $staffID;
                 $staff = $staff->getStaff($staffID);
                 $firstName = $staff['fName'];
-                $middleName = $staff['mName'];
+                $middleName = $staff['oName'];
                 $lastName = $staff['lName']; 
                 $dob = $staff['dob'];
                 $gender = $staff['gender'];
                 $maritalStatus = $staff['maritalStatus'];
                 $nationality = $staff['nationality'];
-                $occupation = $staff['occupation'];
+                $occupation = ''; // Field not present in staff table
                 $mobile = $staff['mobile'];
                 $email = $staff['email'];
                 $postalAddress = $staff['postalAddress'];
-                $digitalAddress = $staff['digitalAddress'];
-                $contactAddress = $staff['contactAddress'];
+                $digitalAddress = $staff['digitalAdress'];
+                $contactAddress = $staff['homeAddress'];
                 $username = $staff['username'];
+                $password = $staff['password'];
                 $status = $staff['status'];
                 $agentId = $staff['agentId'];
                 require_once($template['staff-form']);
@@ -145,18 +147,18 @@
                 $staffID = $_REQUEST['id'];
                 $staff = $staff->getStaff($staffID);
                 $firstName = $staff['fName'];
-                $middleName = $staff['mName'];
+                $middleName = $staff['oName'];
                 $lastName = $staff['lName']; 
                 $dob = $staff['dob'];
                 $gender = $staff['gender'];
                 $maritalStatus = $staff['maritalStatus'];
                 $nationality = $staff['nationality'];
-                $occupation = $staff['occupation'];
+                $occupation = ''; // Field not present in staff table
                 $mobile = $staff['mobile'];
                 $email = $staff['email'];
                 $postalAddress = $staff['postalAddress'];
-                $digitalAddress = $staff['digitalAddress'];
-                $contactAddress = $staff['contactAddress'];
+                $digitalAddress = $staff['digitalAdress'];
+                $contactAddress = $staff['homeAddress'];
                 $username = $staff['username'];
                 $status = $staff['status'];
                 $agentId = $staff['agentId'];

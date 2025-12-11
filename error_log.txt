@@ -78,3 +78,8 @@
 [2025-12-11 18:35:46] Fatal Error: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in G:\xampp\htdocs\susu_bank\index.php on line 62
 [2025-12-11 19:16:27] Fatal Error: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in G:\xampp\htdocs\susu_bank\index.php on line 62
 [2025-12-11 19:18:27] Fatal Error: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in G:\xampp\htdocs\susu_bank\index.php on line 62
+[2025-12-11 19:37:34] Fatal Error: Failed to load core application files: Failed opening required '' (include_path='G:\xampp\php\PEAR') in G:\xampp\htdocs\susu_bank\route\action.php on line 296
+[2025-12-11 19:39:28] Fatal Error: Failed to load core application files: Staffs::updateStaff(): Argument #1 ($staffId) must be of type int, null given, called in G:\xampp\htdocs\susu_bank\route\action.php on line 272 in G:\xampp\htdocs\susu_bank\modules\staffs.php on line 115
+[2025-12-11 19:39:50] Fatal Error: Failed to load core application files: Staffs::getStaff(): Argument #1 ($staffId) must be of type int, null given, called in G:\xampp\htdocs\susu_bank\route\main.php on line 125 in G:\xampp\htdocs\susu_bank\modules\staffs.php on line 49
+[2025-12-11 19:40:35] Fatal Error: Failed to load core application files: Staffs::getStaff(): Argument #1 ($staffId) must be of type int, null given, called in G:\xampp\htdocs\susu_bank\route\main.php on line 125 in G:\xampp\htdocs\susu_bank\modules\staffs.php on line 49
+[2025-12-11 19:40:37] Fatal Error: Failed to load core application files: Staffs::getStaff(): Argument #1 ($staffId) must be of type int, null given, called in G:\xampp\htdocs\susu_bank\route\main.php on line 125 in G:\xampp\htdocs\susu_bank\modules\staffs.php on line 49
